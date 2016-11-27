@@ -8,3 +8,8 @@ In order to successfuly run my application (Chrome), we should run simple http s
 
 ## Final step
 Enjoy the application.
+
+# Tests
+
+In order to start tests is necessarily install nightwatch and geckodriver with properly set up configuration file nightwatch.json.
+You can run tests in root of my project by command nightwatch tests.
