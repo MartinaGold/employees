@@ -39,14 +39,14 @@ app.factory('EmployeeService', function($http, $q){
         });
     };
 
-    employeeService.getEmployeesStatistics = function(){
+    employeeService.getEmployeeStatistics = function(){
         return $q(function(resolve, reject){
-            $http.get('http://devel.usu.co.at:1504/HRDemo/api/employees/statistics_by_position').then(function (employeesStatistics){
-                if( ! employeesStatistics){
+            $http.get('http://devel.usu.co.at:1504/HRDemo/api/employees/statistics_by_position').then(function (employeeStatistics){
+                if( ! employeeStatistics){
                     return reject();
                 }
                 
-                return resolve(employeesStatistics.data);
+                return resolve(employeeStatistics.data);
             });
         });
     };
