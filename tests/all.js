@@ -8,8 +8,8 @@ module.exports = {
             .waitForElementVisible('body', 1000);
         client.expect.element('employee-records form[name="formEmployee"]').to.be.present
         client.expect.element('employee-records table').to.be.present
-        client.expect.element('employees-statistics table').to.be.present
-        client.expect.element('chart .chart canvas').to.be.present
+        client.expect.element('employee-statistics table').to.be.present
+        client.expect.element('chart .chart-pie canvas').to.be.present
         client.expect.element('chart .horizontal-bar canvas').to.be.present
     },
     'check employee records form works properly': function (client) {
