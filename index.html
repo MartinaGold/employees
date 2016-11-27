@@ -1,0 +1,33 @@
+<html lang="en" ng-app="main">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.min.js">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+  <body ng-controller="Main" ng-cloak>
+
+    <md-card class="employee-form-container">
+      <employee-records></employee-records>
+      <employees-statistics></employees-statistics>
+      <chart></chart>
+    </md-card>
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+    <script src="node_modules/angular-material/angular-material.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+
+
+    <script src="app/app.js"></script>
+    <script src="app/MainController.js"></script>
+    <script src="app/EmployeeService.js"></script>
+    <script src="app/employee-records/EmployeeRecordsDirective.js"></script>
+    <script src="app/employees-statistics/EmployeesStatisticsDirective.js"></script>
+    <script src="app/chart/ChartDirective.js"></script>
+  </body>
+</html>

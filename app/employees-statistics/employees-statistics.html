@@ -1,0 +1,19 @@
+<h3 class="md-headline title">Statistiky zaměstnanců</h3>
+<div>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+          <th>Pozice</th>                   
+          <th>Počet zaměstnanců</th>
+          <th>Průměrný věk</th>
+      </tr>
+    </thead>
+    <tbody ng-repeat="statistic in employeesStatistics">
+      <tr>
+          <td>{{statistic.position}}</td>
+          <td>{{statistic.count}}</td>
+          <td>{{statistic.age | number:0}}</td>    
+      </tr>
+    </tbody>
+  </table>
+</div>

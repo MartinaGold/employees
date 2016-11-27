@@ -1,0 +1,42 @@
+<div layout="column" ng-cloak class="md-inline-form">
+  <h3 class="md-headline title">Evidence zaměstnanců</h3>
+  <md-content layout-padding>
+    <form name="formEmployee" novalidate>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Jméno zaměstnance</label>
+          <input type="text" placeholder="Karel Novák" ng-model="employee.name" flex-gt-sm required>
+        </md-input-container>
+
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Věk</label>
+          <input  type="text" placeholder="19" ng-model="employee.age" required>
+        </md-input-container>
+
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Pozice</label>
+          <input type="text" placeholder="BACKEND_DEVELOPER" ng-model="employee.position" required>
+        </md-input-container>   
+    </form>
+    <md-button ng-disabled="! isFormValid(formEmployee)" class="md-primary md-raised" ng-click="isFormValid(formEmployee) && addNewEmployee()">Přidat</md-button>
+  </md-content>
+</div>
+<div>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+          <th>Jméno</th>                   
+          <th>Věk</th>
+          <th>Pozice</th>
+          <th></th>
+      </tr>
+    </thead>
+    <tbody ng-repeat="employee in employees track by $index">
+      <tr>
+          <td>{{employee.name}}</td>
+          <td>{{employee.age}}</td>
+          <td>{{employee.position}}</td>
+          <td><md-icon md-svg-src="images/svg/ic_clear_black_24px.svg" class="material-icons" ng-click="removeEmployee($index, employee.id)"></md-icon></td>           
+      </tr>
+    </tbody>
+  </table>
+</div>
