@@ -1,6 +1,6 @@
 angular.module('main').directive('employeesStatistics', function(){
 	return {
-		templateUrl: 'app/employees-statistics/employees-statistics.html',
+		templateUrl: 'app/employee-statistics/employee-statistics.html',
 		controller: function($scope){
 			
 		}

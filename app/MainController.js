@@ -1,13 +1,13 @@
 angular.module('main').controller('Main', function($scope, EmployeeService){
-	$scope.employeesStatistics = [];
+	$scope.employeeStatistics = [];
 
-	getEmployeesStatistics();
+	getEmployeeStatistics();
 
-	$scope.$on('EMPLOYEES_CHANGED', getEmployeesStatistics);
+	$scope.$on('EMPLOYEES_CHANGED', getEmployeeStatistics);
 
-	function getEmployeesStatistics() {
-		EmployeeService.getEmployeesStatistics().then(function(employeesStatistics){
-			$scope.employeesStatistics = employeesStatistics;
+	function getEmployeeStatistics() {
+		EmployeeService.getEmployeeStatistics().then(function(employeeStatistics){
+			$scope.employeeStatistics = employeeStatistics;
 		});
 	}
 });
