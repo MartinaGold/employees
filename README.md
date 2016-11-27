@@ -1,7 +1,7 @@
 # Installation tutorial
 
 ## First step
-We use npm (node package manager) in order to install dependencies (angular, angular-material...).
+Use npm (node package manager) in order to install dependencies (angular, angular-material...).
 
 ## Second step
 In order to successfuly run my application (Chrome), we should run simple http server in root of my project.
