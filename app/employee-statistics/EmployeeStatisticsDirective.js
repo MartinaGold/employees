@@ -1,4 +1,4 @@
-angular.module('main').directive('employeesStatistics', function(){
+angular.module('main').directive('employeeStatistics', function(){
 	return {
 		templateUrl: 'app/employee-statistics/employee-statistics.html',
 		controller: function($scope){
