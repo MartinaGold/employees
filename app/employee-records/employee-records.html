@@ -9,7 +9,7 @@
 
         <md-input-container class="md-block" flex-gt-sm>
           <label>Věk</label>
-          <input  type="text" placeholder="19" ng-model="employee.age" required>
+          <input  type="text" placeholder="19" ng-pattern="/\d/g" ng-model="employee.age" required>
         </md-input-container>
 
         <md-input-container class="md-block" flex-gt-sm>
