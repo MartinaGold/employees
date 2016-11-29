@@ -6,15 +6,13 @@ angular.module('main').directive('chart', function(){
   			$scope.pieData = [];
   			$scope.horizontalBarData = [];
 			
-			$scope.$watch('employeeStatistics', function(_new, _old){
-				if (_new !== _old){
-					initStatistics();
-				};
+			$scope.$watch('employeeStatistics', function(){
+				initStatistics();
 			});
 
 			function initStatistics(){
 				emptyAllData();
-				for (i = 0; i < $scope.employeeStatistics.length; i++){
+				for (var i = 0; i < $scope.employeeStatistics.length; i++){
 					$scope.pieData.push($scope.employeeStatistics[i].count); 
 					$scope.chartLabels.push($scope.employeeStatistics[i].position);
 					$scope.horizontalBarData.push(Math.round($scope.employeeStatistics[i].age));
