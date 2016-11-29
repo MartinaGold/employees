@@ -35,7 +35,7 @@ app.factory('EmployeeService', function($http, $q){
 
     employeeService.removeEmployee = function(employeeId){
         return $q(function(resolve, reject){
-            $http.delete(API_COMMANDS.REMOVE_EMPLOYEE + employeeId).then(function (data){
+            $http.delete(API_COMMANDS.REMOVE_EMPLOYEE + '/' + employeeId).then(function (data){
                 if( ! data){
                     return reject();
                 }
