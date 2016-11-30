@@ -1,5 +1,5 @@
 {
-  "name": "cosmonauts",
+  "name": "employees",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MartinaGold/cosmonauts.git"
+    "url": "git+https://github.com/MartinaGold/employees.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MartinaGold/cosmonauts/issues"
+    "url": "https://github.com/MartinaGold/employees/issues"
   },
-  "homepage": "https://github.com/MartinaGold/cosmonauts#readme",
+  "homepage": "https://github.com/MartinaGold/employees#readme",
   "dependencies": {
     "angular": "^1.5.9",
     "angular-animate": "^1.5.9",
